@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Cards Using HTML & CSS</title>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Yanone+Kaffeesatz:wght@700&display=swap&family=Anton&display=swap');
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        padding: 5%;
+        background: url(https://travellingmoods.com/wp-content/uploads/2015/07/rainforest.jpg) no-repeat center center/cover;
+        backdrop-filter: blur(5px);
+        background-attachment: fixed;
+    }
+
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 25%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .card-desc {
+        padding: 5%;
+    }
+
+    .card-desc h1 {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        text-transform: uppercase;
+    }
+
+    
+
+    @media only screen and (max-width: 1200px) {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            width: 45%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .main-heading {
+            font-size: 2rem;
+        }
+        .card {
+            width: 100%;
+            margin: 2.5%;
+        }
+
+        footer a {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">
+            <div class="card-img">
+                <img src="https://earthnworld.com/wp-content/uploads/2018/11/African-Lion-1024x678.jpg" alt="">
+            </div>
+            <div class="card-desc">
+                <h1>African Lion</h1>
+                <p>Lions are viewed as the rulers of the wilderness, and in all respects which is all well and good. The African lion has staggering velocity, well sharpened sharp paws and teeth to assault a conceivable prey. They are the greatest of the African carnivores. The females, for the most part, do the chasing, and the guys are sluggish, caught up with securing the pride.</p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
